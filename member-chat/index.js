@@ -155,7 +155,7 @@ window.onload = function() {
         // Only a max message length of 1000
         chat_input.setAttribute('minlength', 1)
         // Get the name of the user
-        chat_input.placeholder =`${parent.get_name()}, Chat Is Disabled`
+        chat_input.placeholder =`${parent.get_name()}, Say Something...`
         chat_input.onkeyup  = function(){
           if(chat_input.value.length > 0){
             chat_input_send.removeAttribute('disabled')
